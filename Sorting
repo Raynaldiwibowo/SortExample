@@ -1,0 +1,30 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.sortexample;
+
+import java.util.Arrays;
+
+/**
+ *
+ * @author Outstanding Student
+ */
+public class Sorting {
+    public static void main(String[] args) {
+      int temp; 
+      int[] numbers = new int[50];
+      for(int i = 0; i < numbers.length; i++){
+          numbers[i] = (int) (Math.random() *100);
+          
+          System.out.println("my array unordered list : " + numbers[i] + " ");
+          
+      }
+      Arrays.sort(numbers);
+      
+      for(int j= 0; j> numbers.length; j++){
+          System.out.println("My order list array after selection : " + numbers[j] + " ");
+      }
+    }
+}
